@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- xeicon 사용하기 -->
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <!-- jquery 코드가 무조건 맨 위에 와야한다. (중요) -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <style>
+            .visual {
+                position: relative;
+            }
+            .visual img {
+                width: 100%;
+
+            }
+
+            .visual button {
+                /*  버튼을 absolute 로 해줘야한다. */
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                transform:translateY(-50%);
+                width: 71px;
+                height: 71px;
+                border-radius: 100%;
+                background:rgba(0, 0, 0, 0.5);
+                border: none;
+            }
+            .visual button::before {font-family: 'xeicon'; color: #fff; font-size: 45px;}
+
+            .visual button.slick-prev { left: 50px; font-size: 0; color: transparent;}
+            .visual button.slick-prev::before {content:"\e93d"; font-family: 'xeicon';}
+
+            .visual button.slick-next { right: 50px; font-size: 0; color: transparent;}
+            .visual button.slick-next::before {content:"\e940"; font-family: 'xeicon';}
+
+
+            .slide-img {
+                width: 100%;
+                padding-bottom: 32%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .slide-img1 {
+                background-image: url(/imageFolder/image.png);
+                background-position: bottom center;
+            }
+        </style>
+    </head>
+
+     <body>
+
+        <!-- <i class="xi-angle-left-thin"></i>
+        <i class="xi-angle-right-thin"></i> -->
+
+        <section class="visual">
+            <div>
+                <img src="/imageFolder/image.png" alt="">
+                <div class="slide-text">
+                    <p>"벤치 프레스"
+                    <br />
+                    "밀리터리 프레스"</p>
+                    <a href="">자세히</a>
+                </div>
+            </div>
+            <div><img src="/imageFolder/image.png" alt=""></div>
+            <div><img src="/imageFolder/image.png" alt=""></div>
+        </section>
+        <!-- 이렇게 만들면 버튼요소가 자동으로 생성된다 -->
+        <!-- 버튼을 absolute 로 해줘야한다. -->
+
+        <script type="text/javascript">
+
+            $('.visual').slick({
+                // dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+
+        </script>
+        </body>
+</html>
