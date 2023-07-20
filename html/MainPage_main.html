@@ -18,6 +18,19 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <!-- 김민재-css,js및 임포트 -->
 
     <!-- 김민현-css,js및 임포트 -->
+    <!-- slick css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/section1_V1.0_mh.css">
+    <!-- xeicon css 불러오기 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick js 불러오기 -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
 
     <!-- 차두환-css,js및 임포트 -->
     <link rel="stylesheet" href="../css/section2.css"/>
@@ -28,7 +41,42 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
     <section> 메인섹션 - 최영찬</section>
 
-    <section> 서브섹션1 - 김민현</section>
+<!-- <section> 서브섹션1 - 김민현</section> -->
+<section class="visual">
+
+    <div class="slide-img slide-img1">
+        <div class="slide-txt">
+            <p>야외 운동</p>
+            <p>서핑</p>
+            <a href="">자세히</a>
+        </div>
+    </div>
+    <div class="slide-img slide-img2">
+        <div class="slide-txt">
+            <p>헬스장</p>
+            <p>데드 리프트</p>
+            <a href="">자세히</a>
+        </div>
+    </div>
+    <div class="slide-img slide-img3">
+        <div class="slide-txt">
+            <p>홈트레이닝</p>
+            <p>요가</p>
+            <a href="">자세히</a>
+        </div>
+    </div>
+    <div class="slide-img slide-img4">
+        <div class="slide-txt">
+            <p>야외 운동</p>
+            <p>러닝</p>
+            <a href="">자세히</a>
+        </div>
+    </div>
+
+</section>
+<br />
+
+
 <!-- 서브섹션2 차두환 -->
     <section2>
         <div id="section2-container">
@@ -73,5 +121,20 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
     <footer> 푸터 - 김민재</footer>
     
+
+
+
+    <!-- 외부 라이브러리 받아오기 ----- 민현 ----- -->
+    <script type="text/javascript">
+
+        $('.visual').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            arrows : true,
+        });
+
+    </script>
 </body>
 </html>
