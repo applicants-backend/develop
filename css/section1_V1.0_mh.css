@@ -119,6 +119,12 @@
     padding: 3%;
     box-sizing: border-box;
 } 
+.slide-txt-box {
+    width: 20rem;
+    margin: 5rem 0 0 5%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+}
 
 
 .slide-txt a {
@@ -163,14 +169,14 @@
 }
 .visual .slick-dots li {
     float: left;
-    margin: 0 4rem 0 0;
+    margin: 0 1.5rem 0 0;
 }
 .visual .slick-dots li:last-child {
     margin: 0;
 }
 .visual .slick-dots li button {
     display: block;
-    width: 2rem;
+    width: 2.5rem;
     height: 1rem;
     font-size: 0;
     background: transparent;
@@ -181,7 +187,7 @@
 .visual .slick-dots li.slick-active button {
     background: #fff;
     border: none;
-    width: 5rem;
+    width: 7rem;
 }
 
 /* //Dots */
