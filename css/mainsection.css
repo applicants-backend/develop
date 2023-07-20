@@ -1,6 +1,8 @@
 
 .main_section {
     position: relative;
+    width: 100vw;
+    height: auto;
 }
 .main_section2 {
     position: relative;
@@ -19,11 +21,13 @@
     white-space: nowrap;
 }
 /* 메인 이미지 */
-.main_img > div > img{
+.main_img > div > img {
     /* align-items: center; */
+    /* position: absolute; */
     position: relative;
     object-fit:cover;
     width: 100vw;
+  
     /* animation: movemessage 2s linear infinite alternate; */
 }
 .search {
@@ -67,12 +71,12 @@
     padding: 2em 6em;
     position: absolute;
     text-transform: uppercase;
-    top: 400px;
+    top: -400px;
     left: 100px;
 }
 .about-btn{
  position: absolute;
- top: 550px;
+ top: -250px;
  left: 100px;
 }
 .button_mainsec::before,
@@ -80,7 +84,7 @@
     background: #fff;
     content: '';
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .button_mainsec:hover {
