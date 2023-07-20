@@ -88,7 +88,7 @@
     display: block;
 }
 .slide-img {
-    width: 100%;
+    width: 100vw;
     /* padding-bottom: 32%; */
     background-repeat: no-repeat;
     background-size: cover;
