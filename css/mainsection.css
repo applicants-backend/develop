@@ -24,7 +24,7 @@ body {
 /* 메인 이미지 */
 .main_img > div > img{
     /* align-items: center; */
-    position: absolute;
+    position: relative;
     object-fit:cover;
     width: 100vw;
     /* animation: movemessage 2s linear infinite alternate; */
@@ -75,7 +75,7 @@ body {
 
 
 }
-.about-btn{
+.aboutbtn{
  /* position: absolute; */
  top: 550px;
  left: 100px;
