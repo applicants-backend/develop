@@ -1,0 +1,56 @@
+h2 {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .8s;
+  }
+  
+  h2.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .image1 {
+      background: url(../img/f1_sample\ \(6\).jpg) no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .image2 {
+      background: url(../img/f1_sample\ \(9\).jpg) no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .image3 {
+      background: url(../img/f1_sample\ \(12\).jpg) no-repeat;
+    background-attachment: fixed;
+  }
+
+  .image4 {
+    background: url(../img/f1_sample\ \(11\).jpg) no-repeat;
+  background-attachment: fixed;
+}
+  
+   /* ----------- */
+  
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #1e2339;
+    font-size: .9rem;
+  }
+  
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+  
+  * {
+    font-family: Pretendard;
+    padding: 0;
+    margin: 0;
+  }
