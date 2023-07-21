@@ -9,103 +9,68 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
         <link rel="stylesheet" href="../css/mainsection.css"/>
-
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 	</head>
     
        
 	<body>
 
-        <div class="main_section">  
-            <!-- main img -->
-            <div class="main_img">
-                <div class="code code--small code--left" data-aos="fade-right">
-					<img src="../img/mainsection.jpg" id=img1 />
-				</div>  
-            </div>
-            
-            <!-- main title -->
-            <div class="message">
-            <div class="code code--small code--right" data-aos="zoom-in-left">
-                 You Can 
-                    <div class="code code--small code--right" data-aos="zoom-in-left">
-                        <div> & You Will</div>
-                    </div>
-                </div>             
-            </div>
-
-            <!-- login button -->
-            <!-- <div class="code code--small code--right" data-aos="flip-left"> -->
-                <button class="button_mainsec btn-clear">
-                    <div class="code code--small code--right" id="login-button" data-aos="flip-right">
-                        login
-                    </div>
-                </button>
-            <!-- </div> -->
-
-            <!-- <div class="code code--small code--right" data-aos="flip-right"> -->
-                <button class="button_mainsec about-btn btn-clear" >
-                    <!-- <div class="code code--small code--right" data-aos="flip-left"> -->
-                        about us
-                    <!-- </div> -->
-                </button>
-            <!-- </div> -->
-        </div>
-        
-
-
-        <div class="search">
-            <input type="text" placeholder="검색어 입력" />
-            <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" > -->
-            <!-- <button><i class="fa-solid fa-magnifying-glass" ></i></button> -->
-        </div>
-
-        <div class="about">
+        <section> 메인섹션 - 최영찬
+            <div class="main_section">  
+                <!-- main img -->
+                <div class="main_img">
+                    <div class="code code--small code--left" data-aos="fade-right">
+                        <img src="../img/mainsection.jpg" id=img1 />
+                    </div>  
+                </div>
                 
-            <div class="code code--small code--left" data-aos="flip-right">
-                    <img src="../img/about.jpg" id="aboutImg1">    
+                <!-- main title -->
+                <div class="message">
+                <div class="code code--small code--right" data-aos="zoom-in-left">
+                     You Can 
+                        <div class="code code--small code--right" data-aos="zoom-in-left">
+                            <div> & You Will</div>
+                        </div>
+                    </div>             
+                </div>
+    
+                <!-- login button -->
+                <div class="code code--small code--right" data-aos-offset="-300" data-aos="flip-left">
+                    <button class="button_mainsec btn-clear">
+                        <div class="code code--small code--right" data-aos-offset="-100" id="login-button" data-aos="flip-right">
+                            login
+                        </div>
+                    </button>
+                </div>
+    
+                <div class="code code--small code--right" data-aos-offset="-250" data-aos-delay="200" data-aos="flip-left">
+                    <button class="button_mainsec about-btn btn-clear" id="about-button">
+                        <div class="code code--small code--right" data-aos="flip-left">
+                            about us
+                        </div>
+                    </button>
+                </div>
             </div>
-
-            <div class="abouttext" id="section1">
-
-				<div class="code code--small code--left" data-aos="zoom-in">
-					<h1>About Us</h1>
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-in-up">
-					위 코드는 이미지를 HTML img 요소로 삽입하고, CSS를 사용하여 이미지를 반응형으로 만드는 예시입니다.
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-in-down">
-					정하여 이미지가 부모 요소에 맞게 늘어나도록 하고, height 속성은 auto로 지정하여 이미
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-in-left">
-					max-width 속성은 이미지의 최대 너비를 지정합니다.
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-in-right">
-					위 코드에서는 미디어 쿼리를 사용하여 화면 너비가 768px 이하인 경
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-out">
-					경우 이미지의 최대 너비를 500px로 조정하도록 설정하였습니다. 이
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-out-up">
-					렇게 하면 모바일 화면에서는 이미지가 크게 보이지 않아서 페이지 로딩 속도가 빨라집니다.
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-out-down">
-					반응형 이미지를 구현하는 방법은 위 코드와 같이 간단하게 구현할 수 있습니다. 
-				</div>
-				<div class="code code--small code--left" data-aos="zoom-out-right">
-					하지만 더 복잡한 경우에는 JavaScript나 다른 기술을 사용해야 할 수도 있습니다.
-				</div>
-				<div class="code code--small code--right" data-aos="zoom-out-left">
-					Responsive Image
-				</div>
-		
-            </div>
-        </div>
+    
+            
+        </section>
        
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+       
         <!-- 해당위치로 스크롤 이동하기 -->
         <script src="../js/scroll_move.js">
         </script>
- 
+  <script src="../js/aboutbutton.js"></script>
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
