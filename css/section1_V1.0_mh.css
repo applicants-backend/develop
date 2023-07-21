@@ -98,19 +98,19 @@
     box-sizing: border-box;
 }
 .slide-img1 {
-    background-image: url('/img/surf.jpg');
+    background-image: url('../img/surf.jpg');
     
 }
 .slide-img2 {
-    background-image: url('/img/health.jpg');
+    background-image: url('../img/health.jpg');
     
 }
 .slide-img3 {
-    background-image: url('/img/yoga1.jpg');
+    background-image: url('../img/yoga1.jpg');
     
 }
 .slide-img4 {
-    background-image: url('/img/running.jpg');
+    background-image: url('../img/running.jpg');
     
 }
 .slide-txt {
