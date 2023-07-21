@@ -107,22 +107,24 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
             </div>
 
             <!-- login button -->
-            <!-- <div class="code code--small code--right" data-aos="flip-left"> -->
+            <div class="code code--small code--right" data-aos-offset="-300" data-aos="flip-left">
                 <button class="button_mainsec btn-clear">
-                    <div class="code code--small code--right" id="login-button" data-aos="flip-right">
+                    <div class="code code--small code--right" data-aos-offset="-100" id="login-button" data-aos="flip-right">
                         login
                     </div>
                 </button>
-            <!-- </div> -->
+            </div>
 
-            <!-- <div class="code code--small code--right" data-aos="flip-right"> -->
+            <div class="code code--small code--right" data-aos-offset="-250" data-aos-delay="200" data-aos="flip-left">
                 <button class="button_mainsec about-btn btn-clear" id="about-button">
                     <div class="code code--small code--right" data-aos="flip-left">
                         about us
                     </div>
                 </button>
-            <!-- </div> -->
+            </div>
         </div>
+
+        
     </section>
 
 <!-- <section> 서브섹션1 - 김민현</section> -->
@@ -203,6 +205,34 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
         </div>
     </section2>
 
+    <!-- about us 클릭 효과 -->
+    <!-- <div class="about">
+                
+
+        <div class="abouttext" id="section1">
+
+            <div class="code code--small code--left" data-aos="flip-right">
+                <div class="circle_main">
+      
+                <div class="circle_title">
+                    <h1>About Us</h1>
+                </div>
+
+                <div class="about-text1"> 
+                    <h1>calendar</h1>
+                </div>
+               
+                <div class="about-text2">
+                    <h1>To Do List</h1>
+                </div>
+                
+                </div>
+            </div>
+    
+        </div>
+    </div> -->
+   
+
     <!-- <footer> 푸터 - 김민재</footer> -->
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -276,20 +306,19 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <!-- 해당위치로 스크롤 이동하기 -->
     <script src="../js/scroll_move.js">
     </script>
+    <script src="../js/aboutbutton.js"></script>
 
-
-            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
              
-            <!-- aos -->
-            <script>
-                AOS.init({
-                easing: 'ease-out-back',
-                duration: 1000
-            });
-
-            </script>
+    <!-- aos -->
+    <script>
+        AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+        });
+    </script>
 
 </body>
 </html>
