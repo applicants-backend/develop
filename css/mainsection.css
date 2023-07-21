@@ -2,7 +2,8 @@
 .main_section {
     position: relative;
     width: 100vw;
-    height: auto;
+
+    
 }
 
 .message{
@@ -22,7 +23,7 @@
     position: relative;
     object-fit:cover;
     width: 100vw;
-  
+    top: 20px;
     /* animation: movemessage 2s linear infinite alternate; */
 }
 .search {
