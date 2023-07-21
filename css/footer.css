@@ -8,8 +8,13 @@ footer {
 section {
   width: 100%;
   display: inline-block;
+. section1 {
+  background: #fff;
+  height: 50vh;
   background: #333;
   min-height: 500px;
+  }
+.develop {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
