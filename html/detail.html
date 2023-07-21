@@ -24,7 +24,18 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <!-- 김민재-css,js및 임포트 -->
 
     <!-- 김민현-css,js및 임포트 -->
-
+    <!-- slick css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/detail_subsec2_mh.css">
+    <!-- xeicon css 불러오기 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick js 불러오기 -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- <style>section {background-color: #fff; margin: 0; padding: 0;}</style> -->
     <!-- 차두환-css,js및 임포트 -->
 
     <!-- 최영찬-css,js및 임포트 -->
@@ -88,7 +99,32 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
   <section >서브섹션1</section>
 
 <!-- 슬릭 section -->
-  <section >서브섹션2</section>
+  <section>서브섹션2
+    <div class="sub-sec2-box">
+      <div class="sld-wrp">
+
+        <div class="slider-for">
+          <div class="slide-container">go 1</div>
+          <div class="slide-container">go 2</div>
+          <div class="slide-container">go 3</div>
+          <div class="slide-container">go 4</div>
+          <div class="slide-container">go 5</div>
+          <div class="slide-container">go 6</div>
+        </div>
+        <div class="slider-nav">
+          <div class="slide-btn">go 1</div>
+          <div class="slide-btn">go 2</div>
+          <div class="slide-btn">go 3</div>
+          <div class="slide-btn">go 4</div>
+          <div class="slide-btn">go 5</div>
+          <div class="slide-btn">go 6</div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+
 
 <!-- 캘린더 section -->
   <section>서브섹션3</section>
@@ -119,7 +155,6 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
         <p class="footer-team-name">Copyright © 2023 team 4</p>
     </div>
-
     <div class="footer-center">
 
       <div>
@@ -157,6 +192,25 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     </div>
 
 </footer>
+
+<script>
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    // dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script>
+
 
 </body>
 </html>
