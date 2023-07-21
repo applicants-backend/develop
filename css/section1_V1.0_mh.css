@@ -140,6 +140,7 @@
     box-sizing: border-box;
     position: relative;
     margin: 1rem 0 0 5%;
+    text-decoration-line : none;
 }
 .slide-txt p {
     width: 75%;
@@ -149,6 +150,12 @@
     color: #fff;
     word-break: keep-all;
     line-height: 42px;
+    
+}
+.slide-txt a:hover {
+
+    background-color: #ff0000;
+    border-color: #ff0000;
 }
 /* /////////////////////////////////////////////////////////////////////////// */
 /* visual slide-dots tag */
@@ -186,7 +193,7 @@
     cursor: pointer;
 }
 .visual .slick-dots li.slick-active button {
-    background: #fff;
+    background: #ffffffb0;
     border: none;
     width: 7rem;
 }
