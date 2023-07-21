@@ -37,14 +37,15 @@
     background:rgba(0, 0, 0, 0.5);
     border: none;
 }
+
 .visual button::before {font-family: 'xeicon'; color: #fff; font-size: 45px;}
 
 .visual button.slick-prev { left: 50px; font-size: 0; color: transparent;}
 .visual button.slick-prev::before {content:"\e93d"; font-family: 'xeicon';}
-
+.visual button.slick-prev:hover {background-color: red;}
 .visual button.slick-next { right: 50px; font-size: 0; color: transparent;}
 .visual button.slick-next::before {content:"\e940"; font-family: 'xeicon';}
-
+.visual button.slick-next:hover {background-color: red;}
 /* ///////////////////////////////////////////////////// */
 
 /* Arrow */
@@ -169,6 +170,7 @@
     position: absolute;
     bottom: 2rem;
     right: 2.5rem;
+    
 }
 .visual .slick-dots:after {
     content: "";
@@ -191,9 +193,11 @@
     border: 1px solid ;
     box-sizing: border-box;
     cursor: pointer;
+    border-radius: 50px;
 }
 .visual .slick-dots li.slick-active button {
     background: #ffffffb0;
+    border-radius: 50px;
     border: none;
     width: 7rem;
 }
