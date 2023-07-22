@@ -8,7 +8,8 @@ footer {
 section {
   width: 100%;
   display: inline-block;
-. section1 {
+}
+.section1 {
   background: #fff;
   height: 50vh;
   background: #333;
