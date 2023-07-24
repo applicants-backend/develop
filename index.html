@@ -17,7 +17,7 @@
     <!-- xeicon css 불러오기 -->
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- jquery 불러오기 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
     <!-- slick js 불러오기 -->
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- 차두환-css,js및 임포트 -->
@@ -292,6 +292,19 @@
             </div>
         </div>
     </section2>
+    <!-- 외부 라이브러리 받아오기 ----- 민현 ----- -->
+    <script type="text/javascript">
+
+        $('.visual').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            arrows : true,
+        });
+
+
+    </script>
 
     <!-- about us 클릭 효과 -->
     <!-- <div class="about">
@@ -372,19 +385,7 @@
     
     </footer>
 
-    <!-- 외부 라이브러리 받아오기 ----- 민현 ----- -->
-    <script type="text/javascript">
-
-        $('.visual').slick({
-            dots: true,
-            infinite: true,
-            speed: 1000,
-            slidesToShow: 1,
-            arrows : true,
-        });
-
-
-    </script>
+    
 
     <!-- 해당위치로 스크롤 이동하기 -->
     <script src="./js/scroll_move.js">
