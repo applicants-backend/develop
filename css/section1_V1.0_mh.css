@@ -42,10 +42,10 @@
 
 .visual button.slick-prev { left: 50px; font-size: 0; color: transparent;}
 .visual button.slick-prev::before {content:"\e93d"; font-family: 'xeicon';}
-.visual button.slick-prev:hover {background-color: red;}
+.visual button.slick-prev:hover {background-color: #1E90FF;}
 .visual button.slick-next { right: 50px; font-size: 0; color: transparent;}
 .visual button.slick-next::before {content:"\e940"; font-family: 'xeicon';}
-.visual button.slick-next:hover {background-color: red;}
+.visual button.slick-next:hover {background-color: #1E90FF;}
 /* ///////////////////////////////////////////////////// */
 
 /* Arrow */
@@ -155,8 +155,8 @@
 }
 .slide-txt a:hover {
 
-    background-color: #ff0000;
-    border-color: #ff0000;
+    background-color: #1E90FF;
+    border-color: #1E90FF;
 }
 /* /////////////////////////////////////////////////////////////////////////// */
 /* visual slide-dots tag */

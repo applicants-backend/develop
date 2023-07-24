@@ -1,47 +1,31 @@
-<!-- @html,css,js 파일 따로만들기(중요)
-
-html
-   파일이름_이름이니셜.html
-css
-img
-js
-
-커밋할때 이름 "이름이니셜_파트이름"
-div, a 태그와 같이 공통적으로 많이쓰이는 태그들 
-꼭 개인이 클래스 따로 지정해서 작성하기(중요) -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMM-Main</title>
+    <title>M.M.M</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(function(){
-          $('#header').load("header.html");
-          $("#footer").load("footer.html"); 
-      })
-    </script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <!-- Boxicons CDN 링크 -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- 김민현-css,js및 임포트 -->
     <!-- slick css 불러오기 -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/section1_V1.0_mh.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/section1_V1.0_mh.css">
     <!-- xeicon css 불러오기 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- jquery 불러오기 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- slick js 불러오기 -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- 차두환-css,js및 임포트 -->
-    <link rel="stylesheet" href="../css/section2.css"/>
+    <link rel="stylesheet" href="./css/section2.css"/>
     <!-- 최영찬-css,js및 임포트 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="../css/mainsection.css"/>
+    <link rel="stylesheet" href="./css/mainsection.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -57,14 +41,120 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     }
     </style>
 <body>
-    <div id="header"></div>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="./index.html"><img src="./img/h-logo.png" alt="헤더로고" style="width:75px;"></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><a href="./index.html"><img src="./img/h-logo.png" alt="헤더로고" style="width:75px;"></a></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li ><a style="color: #1E90FF" href="./index.html">HOME</a></li>
+              <li>
+                <a href="#">Sports</a>
+                <i class='bx bxs-chevron-down mainsec-arrow arrow'></i>
+                <ul class="mainsec-sub-menu sub-menu">
+                  <li><a href="./html/category_outside.html">야외 스포츠</a></li>
+                  <li><a href="./html/category_inside.html">실내 스포츠</a></li>
+                  <li><a href="./html/category_home.html">홈 트레이닝</a></li>
+                  <li><a href="./html/category_gym.html">웨이트 트레이닝</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Popular</a>
+                <i class='bx bxs-chevron-down subsec-arrow arrow'></i>
+                <ul class="subsec-sub-menu sub-menu">
+                  <li><a href="./html/detail_surfing.html">서핑</a></li>
+                  <li><a href="./html/detail_climbing.html">클라이밍</a></li>
+                  <li><a href="./html/detail_yoga.html">요가</a></li>
+                  <li><a href="./html/detail_power.html">파워 리프팅</a></li>
+                </ul>
+              </li>
+              <li><a href="./html/aboutus.html">ABOUT US</a></li>
+              <li><a class="button" id="form-open">Login</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="검색어를 입력하세요">
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    
+    <!-- Home -->
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+                <!-- Login From -->
+                <div class="form login_form">
+                    <form action="#">
+                      <h2>Login</h2>
+          
+                      <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+          
+                      <div class="option_field">
+                        <span class="checkbox">
+                          <input type="checkbox" id="check" />
+                          <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                      </div>
+          
+                      <button class="button">Login Now</button>
+          
+                      <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                    </form>
+                </div>
+          
+                <!-- Signup From -->
+                <div class="form signup_form">
+                    <form action="#">
+                      <h2>Signup</h2>
+          
+                      <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+          
+                    <button class="button">Signup Now</button>
+          
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                    </form>
+                </div>
+        </div>
+    </section>
+          
+    <script src="./js/header.js"></script>
 
     <section>
         <div class="main_section">  
             <!-- main img -->
             <div class="main_img">
                 <div class="code code--small code--left" data-aos="fade-right">
-                    <img src="../img/mainsection.jpg" id=img1 />
+                    <img src="./img/mainsection.jpg" id=img1 />
                 </div>  
             
             
@@ -92,7 +182,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
             <div class="code code--small code--right" data-aos-offset="-150" data-aos-delay="200" data-aos="flip-left">
                 <button class="button_mainsec about-btn btn-clear" id="about-button">
                     <div class="code code--small code--right" data-aos="flip-left">
-                        about us
+                        Category
                     </div>
                 </button>
             </div>
@@ -108,9 +198,9 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <div class="slide-img slide-img1">
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
-                <p>실외 운동</p>
+                <p>실외 스포츠</p>
                 <p>서핑</p>
-                <a href="">자세히</a>
+                <a href="./html/detail_surfing.html">자세히</a>
             </div>
         </div>
         
@@ -119,26 +209,26 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
                 <p>헬스장</p>
-                <p>데드 리프트</p>
-                <a href="">자세히</a>
+                <p>웨이트 트레이닝</p>
+                <a href="./html/detail_power.html">자세히</a>
             </div>
         </div>
     </div>
     <div class="slide-img slide-img3">
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
-                <p>홈트레이닝</p>
+                <p>홈 트레이닝</p>
                 <p>요가</p>
-                <a href="">자세히</a>
+                <a href="./html/detail_yoga.html">자세히</a>
             </div>
         </div>
     </div>
     <div class="slide-img slide-img4">
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
-                <p>실내 운동</p>
+                <p>실내 스포츠</p>
                 <p>클라이밍</p>
-            <a href="">자세히</a>
+            <a href="./html/detail_climbing.html">자세히</a>
         </div>
         </div>
     </div>
@@ -148,13 +238,13 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 <!-- 서브섹션2 차두환 -->
     <section2>
         <div id="section2-container">
-            <video id="section2-container-video" src="../videos/sec2_mov.mp4" muted autoplay loop>
+            <video id="section2-container-video" src="./videos/sec2_mov.mp4" muted autoplay loop>
             </video>
             <div id="section2-content">
                 <ul id="section2-sport">
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="../html/section2_main1.html">
+                            <a href="./html/category_inside.html">
                                 <span class="sportimage material-symbols-outlined">
                                     pool
                                 </span>
@@ -166,7 +256,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="../html/section2_main2.html">
+                            <a href="./html/category_outside.html">
                                 <span class="sportimage material-symbols-outlined">
                                     sports_soccer
                                 </span>
@@ -177,7 +267,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="../html/section2_main3.html">
+                            <a href="./html/category_home.html">
                                 <span class="sportimage material-symbols-outlined">
                                     home
                                 </span>
@@ -188,7 +278,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="../html/section2_main4.html">
+                            <a href="./html/category_gym.html">
                                 <span class="sportimage material-symbols-outlined">
                                     exercise
                                 </span>
@@ -230,8 +320,57 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
         </div>
     </div> -->
    
-    <div id="footer"></div>
-
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="./img/f-logo.png" alt="푸터로고" style="width: 100px;">
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                <a href="./html/aboutus.html">About Us</a>
+                <a href="#"><img src="./img/instagram-logo.png" alt="인스타그램이미지" style="width: 21px;"></a>
+                <a href="#"><img src="./img/github-logo.png" alt="깃허브이미지" style="width: 21px;"></a>
+            </p>    
+    
+            <p class="footer-team-name">Copyright © 2023 team 4</p>
+        </div>
+    
+        <div class="footer-center">
+    
+          <div>
+            <p>김민재 ㅤ<a href="#"><img src="./img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
+          </div>
+          <div>
+            <p><a href="@이메일주소">example@gmail.com</a>
+          </div>
+          <div>
+            <p>김민현 ㅤ<a href="#"><img src="./img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
+          </div>
+          <div>
+            <p><a href="@이메일주소">example@gmail.com</a>
+          </div>
+          <div>
+            <p>차두환 ㅤ<a href="#"><img src="./img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
+          </div>
+          <div>
+            <p><a href="@이메일주소">example@gmail.com</a>
+          </div>
+          <div>
+            <p>최영찬 ㅤ<a href="#"><img src="./img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
+          </div>
+          <div>
+            <p><a href="@이메일주소">example@gmail.com</a>
+          </div>
+    
+        </div>
+    
+        <div class="footer-right">
+            <p class="footer-project-about">
+                <span>POSCO x CODINGON Frontend Project1 - Team 4</span>
+                프론트엔드 첫 번째 프로젝트 <br>
+                4조 - 운동부족을 겪고 있는 현대인들을 위한 운동 소개 및 장려 웹페이지
+            </p>
+        </div>
+    
+    </footer>
 
     <!-- 외부 라이브러리 받아오기 ----- 민현 ----- -->
     <script type="text/javascript">
@@ -248,10 +387,10 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     </script>
 
     <!-- 해당위치로 스크롤 이동하기 -->
-    <script src="../js/scroll_move.js">
+    <script src="./js/scroll_move.js">
     </script>
-    <script src="../js/aboutbutton.js"></script>
-    <script src="../js/"></script>
+    <script src="./js/aboutbutton.js"></script>
+    <script src="./js/"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
