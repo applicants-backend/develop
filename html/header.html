@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+<nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="../html/MainPage_main.html"><img src="../img/h-logo.png" alt="헤더로고" style="width:75px;"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><a href="../html/MainPage_main.html"><img src="../img/h-logo.png" alt="헤더로고" style="width:75px;"></a></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li ><a style="color: #1E90FF" href="../html/MainPage_main.html">HOME</a></li>
+          <li>
+            <a href="#">Sports</a>
+            <i class='bx bxs-chevron-down mainsec-arrow arrow'></i>
+            <ul class="mainsec-sub-menu sub-menu">
+              <li><a href="../html/category.html">야외 스포츠</a></li>
+              <li><a href="#">실내 스포츠</a></li>
+              <li><a href="#">홈 트레이닝</a></li>
+              <li><a href="#">웨이트 트레이닝</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+            <i class='bx bxs-chevron-down subsec-arrow arrow'></i>
+            <ul class="subsec-sub-menu sub-menu">
+              <li><a href="../html/detail.html">서핑</a></li>
+              <li><a href="#">클라이밍</a></li>
+              <li><a href="#">요가</a></li>
+              <li><a href="#">파워 리프팅</a></li>
+            </ul>
+          </li>
+          <li><a href="../html/aboutus.html">ABOUT US</a></li>
+          <li><a class="button" id="form-open">Login</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="검색어를 입력하세요">
+        </div>
+      </div>
+    </div>
+</nav>
+
+
+<!-- Home -->
+<section class="home">
+    <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+            <!-- Login From -->
+            <div class="form login_form">
+                <form action="#">
+                  <h2>Login</h2>
+      
+                  <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" placeholder="Enter your password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+      
+                  <div class="option_field">
+                    <span class="checkbox">
+                      <input type="checkbox" id="check" />
+                      <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                  </div>
+      
+                  <button class="button">Login Now</button>
+      
+                  <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                </form>
+            </div>
+      
+            <!-- Signup From -->
+            <div class="form signup_form">
+                <form action="#">
+                  <h2>Signup</h2>
+      
+                  <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" placeholder="Create password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" placeholder="Confirm password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+      
+                <button class="button">Signup Now</button>
+      
+                <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+    </div>
+</section>
+      
+<script src="../js/header.js"></script>

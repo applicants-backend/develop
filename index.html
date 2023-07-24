@@ -1,23 +1,16 @@
-<!-- @html,css,js 파일 따로만들기(중요)
-
-html
-   파일이름_이름이니셜.html
-css
-img
-js
-
-커밋할때 이름 "이름이니셜_파트이름"
-div, a 태그와 같이 공통적으로 많이쓰이는 태그들 
-꼭 개인이 클래스 따로 지정해서 작성하기(중요) -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인 페이지</title>
-    <!-- 김민재-css,js및 임포트 -->
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+          $('#header').load("header.html");
+          $("#footer").load("footer.html");
+      })
+    </script>
     <!-- Boxicons CDN 링크 -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- 김민현-css,js및 임포트 -->
