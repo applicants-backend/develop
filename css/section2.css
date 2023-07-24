@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
 
-    width: 60%;
+    width: 80%;
     height: 300px;
 
     display: flex;
@@ -39,7 +39,7 @@
 #section2-sport{
     width: 100%;
     height: 300px;
-    
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between; 
 }
@@ -60,7 +60,7 @@ a:hover > .sportimage{
     background-color: rgba(0, 0, 0, 0.652);
     /* background: none; */
     /* border: 1px solid #ffffff; */
-    width: 200px;
+    width: 300px;
     height: 350px;
     margin-left :30px ;
     
@@ -69,10 +69,15 @@ a:hover > .sportimage{
     justify-content: center;
     margin-top: 50px;
     opacity: 1;
-
     /* border-radius: 3%; */
 }
-
+.sport>div>a>span{
+       /* position: absolute; */
+       padding: 12.5%;
+       margin-top: 10px;
+       font-size: 120px;
+       /* margin: auto; */
+    }
 /* .iconimage {
     width: 100%;
     height: 100px;
@@ -81,15 +86,20 @@ a:hover > .sportimage{
 .sport > div > a{
     text-decoration-line:none;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 500;
+
+} 
+.sport > div > a >p{
+    line-height: 80px;
+
 } 
 .sport > div > a:visited { color:rgb(255, 255, 255); }
 .sportimage {
-    width: 100%;
-    height: 310px;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
-    margin-top: -15px;
+    width: 180px;
+    height: 180px;
+    border-radius: 5%;
+    /* margin-top: -35px; */
+    border: #ffffff solid 3px;
 }
 
 @media screen and (max-width:1200px) {
@@ -98,17 +108,15 @@ a:hover > .sportimage{
     }
     #section2-content {
         width: 80%;
-        height: 600px;
-
+        height: 700px;
         justify-content: center;
     }
     #section2-sport {
         background-color: rgba(0, 0, 0, 0.652);
         border-radius: 5%;
+        margin-bottom: 10%;
         flex-wrap: wrap;
-
         height: 100%;
-
         justify-content: center; 
 
     }
@@ -119,7 +127,7 @@ a:hover > .sportimage{
         margin-left: 1%;
         margin-bottom: 1%;
     }
-
+    
     .sportimage {
         width: 10%;
         height: 10%;
@@ -130,10 +138,7 @@ a:hover > .sportimage{
         border-radius: 20%;
     }
 
-    .iconimage {
-        width: 10%;
-        height: 10%;
-        min-width: 50px;
-        min-height: 50px;
-    }
+    .sport>div>a>span{
+        padding: 10px;        
+     }
 }

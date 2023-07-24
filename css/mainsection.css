@@ -2,19 +2,7 @@
 .main_section {
     position: relative;
     width: 100vw;
-
-    
-}
-
-.message{
-    position: absolute;
-    top:100px;
-    left:200px;
-    font-size: 100px;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    white-space: nowrap;
+ 
 }
 /* 메인 이미지 */
 .main_img > div > img {
@@ -25,6 +13,19 @@
     width: 100vw;
     top: 20px;
     /* animation: movemessage 2s linear infinite alternate; */
+}
+.message{
+    position: absolute;
+    top:100px;
+    /* left:200px; */
+    margin-left: 200px;
+    /* margin-top: 100px; */
+    /* margin-right: 200px; */
+    font-size: 100px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
 }
 .search {
     position: absolute;
@@ -73,7 +74,8 @@
 .about-btn{
  position: absolute;
  top: -350px;
- left: 2.5em;
+ 
+ padding: 1.5em 4em;
 }
 
 .button_mainsec::before,
@@ -111,8 +113,20 @@
 
 @media screen and (max-width: 1200px) {
     .main_img > div > img{
-        /* position: relative; */
+        position: relative;
         width: 1200px;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .message{
+        /* text-align: center; */
+        left: -170px;
+    }
+    .button_mainsec{
+        margin-left: -30px;
     }
 
 
