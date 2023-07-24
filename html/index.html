@@ -1,0 +1,268 @@
+<!-- @html,css,js 파일 따로만들기(중요)
+
+html
+   파일이름_이름이니셜.html
+css
+img
+js
+
+커밋할때 이름 "이름이니셜_파트이름"
+div, a 태그와 같이 공통적으로 많이쓰이는 태그들 
+꼭 개인이 클래스 따로 지정해서 작성하기(중요) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM-Main</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+          $('#header').load("header.html");
+          $("#footer").load("footer.html");
+      })
+    </script>
+    <!-- Boxicons CDN 링크 -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- 김민현-css,js및 임포트 -->
+    <!-- slick css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/section1_V1.0_mh.css">
+    <!-- xeicon css 불러오기 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick js 불러오기 -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- 차두환-css,js및 임포트 -->
+    <link rel="stylesheet" href="../css/section2.css"/>
+    <!-- 최영찬-css,js및 임포트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="../css/mainsection.css"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    </style>
+<body>
+    <div id="header"></div>
+
+    <section>
+        <div class="main_section">  
+            <!-- main img -->
+            <div class="main_img">
+                <div class="code code--small code--left" data-aos="fade-right">
+                    <img src="../img/mainsection.jpg" id=img1 />
+                </div>  
+            
+            
+            </div>
+            <div class="mainFlex">
+            <!-- main title -->
+            <div class="message">
+            <div class="code code--small code--right" data-aos="zoom-in-left">
+                 You Can 
+                    <div class="code code--small code--right" data-aos="zoom-in-left">
+                        <div> & You Will</div>
+                    </div>
+                </div>             
+            </div>
+
+            <!-- login button -->
+            <div class="code code--small code--right" data-aos-offset="-300" data-aos="flip-left">
+                <button class="button_mainsec btn-clear">
+                    <div class="code code--small code--right" data-aos-offset="-100" id="login-button" data-aos="flip-right">
+                        login
+                    </div>
+                </button>
+            </div>
+
+            <div class="code code--small code--right" data-aos-offset="-150" data-aos-delay="200" data-aos="flip-left">
+                <button class="button_mainsec about-btn btn-clear" id="about-button">
+                    <div class="code code--small code--right" data-aos="flip-left">
+                        about us
+                    </div>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+<!-- <section> 서브섹션1 - 김민현</section> -->
+<section class="visual">
+
+    <div class="slide-img slide-img1">
+        <div class="code code--small code--right" data-aos="zoom-out">
+            <div class="slide-txt slide-txt-box">
+                <p>실외 운동</p>
+                <p>서핑</p>
+                <a href="">자세히</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="slide-img slide-img2">
+        <div class="code code--small code--right" data-aos="zoom-out">
+            <div class="slide-txt slide-txt-box">
+                <p>헬스장</p>
+                <p>데드 리프트</p>
+                <a href="">자세히</a>
+            </div>
+        </div>
+    </div>
+    <div class="slide-img slide-img3">
+        <div class="code code--small code--right" data-aos="zoom-out">
+            <div class="slide-txt slide-txt-box">
+                <p>홈트레이닝</p>
+                <p>요가</p>
+                <a href="">자세히</a>
+            </div>
+        </div>
+    </div>
+    <div class="slide-img slide-img4">
+        <div class="code code--small code--right" data-aos="zoom-out">
+            <div class="slide-txt slide-txt-box">
+                <p>실내 운동</p>
+                <p>클라이밍</p>
+            <a href="">자세히</a>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- 서브섹션2 차두환 -->
+    <section2>
+        <div id="section2-container">
+            <video id="section2-container-video" src="../videos/sec2_mov.mp4" muted autoplay loop>
+            </video>
+            <div id="section2-content">
+                <ul id="section2-sport">
+                    <li class="sport">
+                        <div class="code code--small code--right" data-aos="flip-left">
+                            <a href="../html/section2_main1.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    pool
+                                </span>
+                                <p>실내 스포츠 ></p>
+                            </a>
+                        </div>
+                       
+                        
+                    </li>
+                    <li class="sport">
+                        <div class="code code--small code--right" data-aos="flip-left">
+                            <a href="../html/section2_main2.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    sports_soccer
+                                </span>
+                                <p>실외 스포츠 ></p>
+                            </a>
+                            
+                        </div>    
+                    </li>
+                    <li class="sport">
+                        <div class="code code--small code--right" data-aos="flip-left">
+                            <a href="../html/section2_main3.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    home
+                                </span>
+                                <p>홈 트레이닝 ></p>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li class="sport">
+                        <div class="code code--small code--right" data-aos="flip-left">
+                            <a href="../html/section2_main4.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    exercise
+                                </span>
+                                <p>웨이트 트레이닝 ></p>
+    
+                            </a>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section2>
+
+    <!-- about us 클릭 효과 -->
+    <!-- <div class="about">
+                
+
+        <div class="abouttext" id="section1">
+
+            <div class="code code--small code--left" data-aos="flip-right">
+                <div class="circle_main">
+      
+                <div class="circle_title">
+                    <h1>About Us</h1>
+                </div>
+
+                <div class="about-text1"> 
+                    <h1>calendar</h1>
+                </div>
+               
+                <div class="about-text2">
+                    <h1>To Do List</h1>
+                </div>
+                
+                </div>
+            </div>
+    
+        </div>
+    </div> -->
+   
+    <div id="footer"></div>
+
+
+    <!-- 외부 라이브러리 받아오기 ----- 민현 ----- -->
+    <script type="text/javascript">
+
+        $('.visual').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            arrows : true,
+        });
+
+
+    </script>
+
+    <!-- 해당위치로 스크롤 이동하기 -->
+    <script src="../js/scroll_move.js">
+    </script>
+    <script src="../js/aboutbutton.js"></script>
+    <script src="../js/"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+             
+    <!-- aos -->
+    <script>
+        AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+        });
+    </script>
+
+</body>
+</html>
