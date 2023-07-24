@@ -170,3 +170,11 @@ div > h3 {
     display: block;
     margin: 2rem 0 0;
   }
+
+  .detail-img {
+    width: 100vw;
+    height: 700px;
+  }
+  .detail-img-surging1 {
+    background-image: url(/img/surfing1.jpg);
+  }
