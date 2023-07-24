@@ -41,21 +41,7 @@
     transition: all 0.3s;
 }
 
-/* button {
-    background: none;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin: 1em auto;
-    padding: 2em 6em;
-    position: absolute;
-    text-transform: uppercase;
-    top: 400px;
-    left: 100px;
-} */
+
 .button_mainsec{
     background: none;
     border: 3px solid #ffffff;
