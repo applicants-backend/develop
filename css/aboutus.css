@@ -17,24 +17,32 @@
   }
   
   .image1 {
-      background: url(../img/f1_sample\ \(6\).jpg) no-repeat;
+    background-image: url(../img/aboutus_swimming.jpg);
+    /* 출처 <a href="https://kr.freepik.com/free-photo/high-angle-of-male-swimmer-in-the-water-pool_10296697.htm#page=2&query=%EC%88%98%EC%98%81&position=3&from_view=search&track=sph">Freepik</a> */
+    background-size: cover;  
     background-attachment: fixed;
   }
   
   .image2 {
-      background: url(../img/f1_sample\ \(9\).jpg) no-repeat;
+    background-image: url(../img/aboutus_climbing.jpg);
+    /* 출처 <a href="https://kr.freepik.com/free-photo/young-woman-climbing-a-tall-indoor-man-made-rock-climbing-wall_8926422.htm#query=%ED%81%B4%EB%9D%BC%EC%9D%B4%EB%B0%8D&position=7&from_view=search&track=sph">작가 teksomolika</a> 출처 Freepik */
+    background-size: cover;
     background-attachment: fixed;
   }
   
   .image3 {
-      background: url(../img/f1_sample\ \(12\).jpg) no-repeat;
+    background-image: url(../img/aboutus_football.jpg);
+    /* 출처 <a href="https://kr.freepik.com/free-photo/soccer-player-action-on-the-stadium_5212258.htm#query=%EC%B6%95%EA%B5%AC&position=43&from_view=search&track=sph">작가 jcomp</a> 출처 Freepik */
+    background-size: cover;
     background-attachment: fixed;
   }
 
   .image4 {
-    background: url(../img/f1_sample\ \(11\).jpg) no-repeat;
-  background-attachment: fixed;
-}
+    background-image: url(../img/aboutus_cycle.jpg);
+    /* 사진 출처: <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/OFyh9TpMyM8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의<a href="https://unsplash.com/@ocen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Coen van de Broek</a> */
+    background-size: cover;
+    background-attachment: fixed;
+  }
   
    /* ----------- */
   
@@ -44,6 +52,6 @@
     align-items: center;
     text-align: center;
     color: #fff;
-    background: #1e2339;
+    background: #2a93d5;
     font-size: .9rem;
   }

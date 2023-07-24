@@ -139,12 +139,14 @@ nav .navbar .links li:hover .subsec-sub-menu{
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease;
+  display: none;
 }
 .navbar.showInput .search-box .input-box{
   top: 65px;
   opacity: 1;
   pointer-events: auto;
   background: #ffffff;
+  display: block;
 }
 .search-box .input-box::before{
   content: '';
@@ -315,7 +317,7 @@ nav .navbar .links li .sub-menu li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
-  z-index: 101;
+  z-index: -1;
   background: #fff;
   padding: 25px;
   border-radius: 12px;
@@ -328,6 +330,7 @@ nav .navbar .links li .sub-menu li{
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
+  z-index: 101;
 }
 .signup_form {
   display: none;
