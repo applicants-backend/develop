@@ -165,12 +165,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* top: 50%; */
-    left: 60%;
+    left: 0%;
     position: absolute;
     bottom: 2rem;
     right: 2.5rem;
-    
+
 }
 .visual .slick-dots:after {
     content: "";
@@ -194,6 +193,7 @@
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 50px;
+
 }
 .visual .slick-dots li.slick-active button {
     background: #ffffffb0;
