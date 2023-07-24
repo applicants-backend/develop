@@ -14,7 +14,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 페이지</title>
+    <title>MMM-Main</title>
     <!-- 김민재-css,js및 임포트 -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -38,21 +38,33 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="../css/mainsection.css"/>
-</head>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    </style>
 <body>
     <!-- <nav> 헤더 및 네비게이션 - 김민재</nav> -->
     <nav>
         <div class="navbar">
           <i class='bx bx-menu'></i>
-          <div class="logo"><a href="#"><img src="../img/h-logo.png" alt="헤더로고" style="width:54px;"></a></div>
+          <div class="logo"><a href="../html/MainPage_main.html"><img src="../img/h-logo.png" alt="헤더로고" style="width:54px;"></a></div>
           <div class="nav-links">
             <div class="sidebar-logo">
               <span class="logo-name">MMM</span>
               <i class='bx bx-x' ></i>
             </div>
             <ul class="links">
-              <li ><a style="color: rgb(237, 0, 0)" href="#">HOME</a></li>
+              <li ><a style="color: rgb(237, 0, 0)" href="../html/MainPage_main.html">HOME</a></li>
               <li>
                 <a href="#">섹션1</a>
                 <i class='bx bxs-chevron-down mainsec-arrow arrow'></i>
@@ -85,7 +97,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
           </div>
         </div>
       </nav>
-      <script src="../js/mj_header.js"></script>
+      <script src="../js/header.js"></script>
 
     <section> 메인섹션 - 최영찬
         <div class="main_section">  
@@ -94,8 +106,10 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                 <div class="code code--small code--left" data-aos="fade-right">
                     <img src="../img/mainsection.jpg" id=img1 />
                 </div>  
-            </div>
             
+            
+            </div>
+            <div class="mainFlex">
             <!-- main title -->
             <div class="message">
             <div class="code code--small code--right" data-aos="zoom-in-left">
@@ -115,12 +129,13 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                 </button>
             </div>
 
-            <div class="code code--small code--right" data-aos-offset="-250" data-aos-delay="200" data-aos="flip-left">
+            <div class="code code--small code--right" data-aos-offset="-150" data-aos-delay="200" data-aos="flip-left">
                 <button class="button_mainsec about-btn btn-clear" id="about-button">
                     <div class="code code--small code--right" data-aos="flip-left">
                         about us
                     </div>
                 </button>
+            </div>
             </div>
         </div>
 
@@ -133,7 +148,7 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <div class="slide-img slide-img1">
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
-                <p>야외 운동</p>
+                <p>실외 운동</p>
                 <p>서핑</p>
                 <a href="">자세히</a>
             </div>
@@ -161,8 +176,8 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <div class="slide-img slide-img4">
         <div class="code code--small code--right" data-aos="zoom-out">
             <div class="slide-txt slide-txt-box">
-                <p>야외 운동</p>
-                <p>러닝</p>
+                <p>실내 운동</p>
+                <p>클라이밍</p>
             <a href="">자세히</a>
         </div>
         </div>
@@ -173,16 +188,17 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 <!-- 서브섹션2 차두환 -->
     <section2>
         <div id="section2-container">
-            <video id="section2-container-video" src="../videos/section2-container-video.mp4" muted autoplay loop>
+            <video id="section2-container-video" src="../videos/sec2_mov.mp4" muted autoplay loop>
             </video>
             <div id="section2-content">
                 <ul id="section2-sport">
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="">
-                                <img class="sportimage" src="../img/climbing5.jpg">
-                                <p>실내 운동 ></p>
-    
+                            <a href="../html/section2_main1.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    pool
+                                </span>
+                                <p>실내 스포츠 ></p>
                             </a>
                         </div>
                        
@@ -190,27 +206,32 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="http://www.naver.com">
-                                <img class="sportimage" src="../img/surf2.jpg">
-                                <p>실외 운동 ></p>
+                            <a href="../html/section2_main2.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    sports_soccer
+                                </span>
+                                <p>실외 스포츠 ></p>
                             </a>
-                        </div>
-                        
+                            
+                        </div>    
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="">
-                                <img class="sportimage" src="../img/yoga3.jpg">
+                            <a href="../html/section2_main3.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    home
+                                </span>
                                 <p>홈 트레이닝 ></p>
-    
                             </a>
                         </div>
                         
                     </li>
                     <li class="sport">
                         <div class="code code--small code--right" data-aos="flip-left">
-                            <a href="">
-                                <img class="sportimage" src="../img/weight2.jpg">
+                            <a href="../html/section2_main4.html">
+                                <span class="sportimage material-symbols-outlined">
+                                    exercise
+                                </span>
                                 <p>웨이트 트레이닝 ></p>
     
                             </a>
