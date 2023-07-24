@@ -1,0 +1,172 @@
+/* body > section > div { background-color: #aacccc }
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+div > h3 {
+	background: #f0f0f0;
+	color: #3498db;
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
+} */
+
+/* body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .sld-wrp {
+    position: relative;
+    /* width: 800px; */
+    margin: 0 auto;
+  }
+  
+  .slider-for {
+    /* width: 800px; */
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .slide-container {
+    height: 40vh;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40vh;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .slide-btn {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  .slide-btn:hover {
+    background-color: rgba(0,0,0,0.5);
+  }
+    /* slide button */
+
+  .slider-nav > button {
+    /*  버튼을 absolute 로 해줘야한다. */
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    border: none;
+}
+    .slider-nav button::before {font-family: 'xeicon'; color: #fff; font-size: 25px;}
+
+    .slider-nav button.slick-prev { left: -60px; font-size: 0; color: transparent;}
+    .slider-nav button.slick-prev::before {content:"\e93d"; font-family: 'xeicon';}
+
+    .slider-nav button.slick-next { right: -60px; font-size: 0; color: transparent;}
+    .slider-nav button.slick-next::before {content:"\e940"; font-family: 'xeicon';}
+
+
+
+    /* slide dots tag */
+
+    .slide-nav .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* top: 50%; */
+        left: 60%;
+        position: absolute;
+        bottom: 2rem;
+        right: 2.5rem;
+    }
+    .slide-nav .slick-dots:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .slide-nav .slick-dots li {
+        float: left;
+        margin: 0 1.5rem 0 0;
+    }
+    .slide-nav .slick-dots li:last-child {
+        margin: 0;
+    }
+    .slide-nav .slick-dots li button {
+        display: block;
+        width: 2.5rem;
+        height: 1rem;
+        font-size: 0;
+        background: transparent;
+        border: 1px solid ;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    /* .slide-nav .slick-dots li.slick-active button {
+        background: #ffffffb0;
+        border: none;
+        width: 7rem;
+    } */
+    .sub-sec2-box {
+        box-sizing: border-box;
+        width: 100vw;
+        height: auto;   
+        background-color: #fff;
+        /* margin: 0 10% 0 10%;  */
+    }
+
+  .detail-wrap{
+    width:100%; 
+    padding:3%; 
+    box-sizing:border-box;
+  }
+  .detail-txt h3 {
+    font-size: 3rem;
+    color: #000;
+  }
+  .detail-txt p {
+    margin: 1rem 0 0;
+    font-size: 1.2rem;
+    color: #232323;
+    line-height: 1.6rem;
+  }
+  .detail-txt p span {
+    display: block;
+    margin: 2rem 0 0;
+  }

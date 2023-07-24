@@ -1,15 +1,16 @@
-h2 {
+/* 어바웃어스 css */
+  .about {
     transform: translateX(-50%);
     opacity: 0;
     transition: .8s;
   }
   
-  h2.active {
+  .about.active {
     transform: translateX(0);
     opacity: 1;
   }
   
-  div {
+  .this div {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -45,12 +46,4 @@ h2 {
     color: #fff;
     background: #1e2339;
     font-size: .9rem;
-  }
-  
-  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-  
-  * {
-    font-family: Pretendard;
-    padding: 0;
-    margin: 0;
   }

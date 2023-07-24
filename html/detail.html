@@ -1,94 +1,79 @@
-<!-- @html,css,js 파일 따로만들기(중요)
-
-html
-   파일이름_이름이니셜.html
-css
-img
-js
-
-커밋할때 이름 "이름이니셜_파트이름"
-div, a 태그와 같이 공통적으로 많이쓰이는 태그들 
-꼭 개인이 클래스 따로 지정해서 작성하기(중요) -->
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mmm</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+          $('#header').load("header.html");
+          $("#footer").load("footer.html");
+      })
+    </script>
     <!-- Boxicons CDN 링크 -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- 김민재-css,js및 임포트 -->
-
     <!-- 김민현-css,js및 임포트 -->
-
+    <!-- slick css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/detail_mh.css">
+    <!-- xeicon css 불러오기 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick js 불러오기 -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- <style>section {background-color: #fff; margin: 0; padding: 0;}</style> -->
     <!-- 차두환-css,js및 임포트 -->
 
     <!-- 최영찬-css,js및 임포트 -->
 </head>
-<body>
-  <nav>
-    <div class="navbar">
-      <i class='bx bx-menu'></i>
-      <div class="logo"><a href="#"><img src="../img/h-logo.png" alt="헤더로고" style="width:54px;"></a></div>
-      <div class="nav-links">
-        <div class="sidebar-logo">
-          <span class="logo-name">MMM</span>
-          <i class='bx bx-x' ></i>
-        </div>
-        <ul class="links">
-          <li><a href="#">HOME</a></li>
-          <li>
-            <a href="#">섹션1</a>
-            <i class='bx bxs-chevron-down mainsec-arrow arrow'></i>
-            <ul class="mainsec-sub-menu sub-menu">
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">섹션2</a>
-            <i class='bx bxs-chevron-down subsec-arrow arrow'></i>
-            <ul class="subsec-sub-menu sub-menu">
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-              <li><a href="#">운동</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">Log in | Join</a></li>
-        </ul>
-      </div>
-      <div class="search-box">
-        <i class='bx bx-search'></i>
-        <div class="input-box">
-          <input type="text" placeholder="검색어를 입력하세요">
-        </div>
-      </div>
-    </div>
-  </nav>
-  <script src="../js/mj_header.js"></script>
-
-  
-
-
+<body style="margin-top: 100px;">
+    <div id="header"></div>
     
 
  
 <!-- 운동 메인 사진 및 이름 section -->
   <section >메인섹션</section>
+    <div>
+      <h1>운동 설명 상세 페이지</h1>
+    </div>
+
 
   <!-- 운동 설명 section -->
   <section >서브섹션1</section>
 
+
 <!-- 슬릭 section -->
-  <section >서브섹션2</section>
+  <section>서브섹션2
+    <div class="sub-sec2-box">
+      <div class="sld-wrp">
+
+        <div class="slider-for">
+          <div class="slide-container">go 1</div>
+          <div class="slide-container">go 2</div>
+          <div class="slide-container">go 3</div>
+          <div class="slide-container">go 4</div>
+          <div class="slide-container">go 5</div>
+          <div class="slide-container">go 6</div>
+        </div>
+        <div class="slider-nav">
+          <div class="slide-btn">go 1</div>
+          <div class="slide-btn">go 2</div>
+          <div class="slide-btn">go 3</div>
+          <div class="slide-btn">go 4</div>
+          <div class="slide-btn">go 5</div>
+          <div class="slide-btn">go 6</div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="/js/detail_mh.js"></script>
+
+
 
 <!-- 캘린더 section -->
   <section>서브섹션3</section>
@@ -103,60 +88,26 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
 
 
+  <div id="footer"></div>
 
+<!-- <script>
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    // dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script> -->
 
-
-  
-  <footer class="footer-distributed">
-    <div class="footer-left">
-        <img src="../img/f-logo.png" alt="푸터로고" style="width: 100px;">
-        <p class="footer-links">
-            <a href="#" class="link-1">Home</a>
-            <a href="#">About Us</a>
-            <a href="#"><img src="../img/instagram-logo.png" alt="인스타그램이미지" style="width: 21px;"></a>
-            <a href="#"><img src="../img/github-logo.png" alt="깃허브이미지" style="width: 21px;"></a>
-        </p>    
-
-        <p class="footer-team-name">Copyright © 2023 team 4</p>
-    </div>
-
-    <div class="footer-center">
-
-      <div>
-        <p>김민재 ㅤ<a href="#"><img src="../img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
-      </div>
-      <div>
-        <p><a href="@이메일주소">example@gmail.com</a>
-      </div>
-      <div>
-        <p>김민현 ㅤ<a href="#"><img src="../img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
-      </div>
-      <div>
-        <p><a href="@이메일주소">example@gmail.com</a>
-      </div>
-      <div>
-        <p>차두환 ㅤ<a href="#"><img src="../img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
-      </div>
-      <div>
-        <p><a href="@이메일주소">example@gmail.com</a>
-      </div>
-      <div>
-        <p>최영찬 ㅤ<a href="#"><img src="../img/github-logo.png" alt="깃허브이미지" style="width: 25px; top: 5px"></a></p>
-      </div>
-      <div>
-        <p><a href="@이메일주소">example@gmail.com</a>
-      </div>
-
-    </div>
-
-    <div class="footer-right">
-        <p class="footer-project-about">
-            <span>POSCO x CODINGON Frontend Project1 - Team 4</span>
-            페이지소개멘트프로젝트소개멘트페이지소개멘트프로젝트소개멘트페이지소개멘트프로젝트소개멘트페이지소개멘트프로젝트소개멘트페이지소개멘트프로젝트소개멘트
-        </p>
-    </div>
-
-</footer>
 
 </body>
 </html>
