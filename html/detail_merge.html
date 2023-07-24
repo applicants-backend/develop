@@ -37,10 +37,13 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- <style>section {background-color: #fff; margin: 0; padding: 0;}</style> -->
     <!-- 차두환-css,js및 임포트 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="../css/detail_dh.css">
+    
 
     <!-- 최영찬-css,js및 임포트 -->
 </head>
-<body style="margin-top: 100px;">
+<body style="margin-top : 75px;">
   <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
@@ -86,53 +89,91 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
   </nav>
   <script src="../js/header.js"></script>
 
-  
-
-
-    
-
- 
-<!-- 운동 메인 사진 및 이름 section -->
-  <section >메인섹션</section>
-    <div>
-      <h1>운동 설명 상세 페이지</h1>
-    </div>
-
-
-  <!-- 운동 설명 section -->
-  <section >서브섹션1</section>
-
-
-<!-- 슬릭 section -->
-  <section>서브섹션2
+<!-- 슬릭 운동 슬라이드 section -->
+  <section>
     <div class="sub-sec2-box">
       <div class="sld-wrp">
 
         <div class="slider-for">
-          <div class="slide-container">go 1</div>
-          <div class="slide-container">go 2</div>
-          <div class="slide-container">go 3</div>
-          <div class="slide-container">go 4</div>
-          <div class="slide-container">go 5</div>
-          <div class="slide-container">go 6</div>
+          <div class="slide-container">slide-img1</div>
+          <div class="slide-container">slide-img2</div>
+          <div class="slide-container">slide-img3</div>
+          <div class="slide-container">slide-img4</div>
+          <div class="slide-container">slide-img5</div>
+          <div class="slide-container">slide-img6</div>
         </div>
         <div class="slider-nav">
-          <div class="slide-btn">go 1</div>
-          <div class="slide-btn">go 2</div>
-          <div class="slide-btn">go 3</div>
-          <div class="slide-btn">go 4</div>
-          <div class="slide-btn">go 5</div>
-          <div class="slide-btn">go 6</div>
+          <div class="slide-btn">slide-img1 small</div>
+          <div class="slide-btn">slide-img2 small</div>
+          <div class="slide-btn">slide-img3 small</div>
+          <div class="slide-btn">slide-img4 small</div>
+          <div class="slide-btn">slide-img5 small</div>
+          <div class="slide-btn">slide-img6 small</div>
         </div>
       
       </div>
     </div>
   </section>
 
+  <br/>
+
+  <!-- 운동 메인 사진 및 이름 section -->
+  <section></section>
+    <div class="detail-wrap detail-txt">
+      <h3>운동 이름</h3>
+      <p>운동 상세 설명 페이지</p>
+    </div>
+
+    <br/>
+
 
 
 <!-- 캘린더 section -->
-  <section>서브섹션3</section>
+<section class="dh-section">
+  <!-- 캘린더 구현 -->
+  <div class="calendar-container">
+      <div id="calendar-nav">
+          <button class="calendar-button1">left</button>
+          <div class="calendar-date"></div>
+          <button class="calendar-button2">right</button>
+      </div>
+      <div class="calendar-body">
+          <ul class="calendar-weeks">
+              <li>sun</li>
+              <li>mon</li>
+              <li>tue</li>
+              <li>wed</li>
+              <li>thu</li>
+              <li>fri</li>
+              <li>sat</li>
+          </ul>
+          <ul class="calendar-days">
+          </ul>
+      </div>
+  </div>
+  <script src="../js/detail_dh.js"></script>
+  <!-- 투두리스트 구현 -->
+  <div class="todolist-container">
+     <p> to do list ! </p>
+      <tr class="todolist-fix">
+          <td>날짜</td>
+          <td>내용</td>
+          <td>체크</td>
+      </tr>
+      <div class="todolist-body">
+      </div>
+  </div>
+<!-- 모달창 구현 -->
+  <div id="cal-modal-container">
+      <div>
+          <input type="text" id="cal-modal-input" placeholder="오늘의 운동은?">
+      </div>
+      <div class="cal-modal-button">
+          <button type="button" class="cal-modal-button1">입력</button>
+          <button type="button" class="cal-modal-button2">취소</button>
+      </div>
+  </div>
+</section>
 
 
 
@@ -203,11 +244,11 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // fade: true,
+    fade: true,
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     // dots: true,
