@@ -94,6 +94,7 @@ document.querySelector('.calendar-button1').addEventListener("click",function() 
 
 document.querySelector('.calendar-button2').addEventListener("click",function() {
     nextMonth();
+
 } )
 
 // 당월 날짜를 클릭 시 오늘 운동을 입력할 수 있는 모달창을 생성하는 과정입니다.
@@ -113,6 +114,7 @@ closemodal.addEventListener("click",e =>(
 
 
   // 모달창에서 입력한 내용을 투두리스트에 옮기는 과정입니다.
+
   let currnetDates = null;
   $(".calendar-days > li").on("click", function(){
       currnetDates = $(this).text();
@@ -130,7 +132,6 @@ closemodal.addEventListener("click",e =>(
   <input type="checkbox" class="todo-checkbox"</td><td>
   </tr>`)
   })
-    
 
 
     // 투두리스트 완료한 운동 삭제 하는 버튼 입니다.!! 
