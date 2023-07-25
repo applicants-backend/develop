@@ -127,66 +127,66 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
     <br/>
 
+    <section class="dh-section">
+    <!-- 캘린더 구현 -->
+    <div class="calendar-container">
+        <div id="calendar-nav">
+            <button class="calendar-button1">next</button> 
+            <div class="calendar-date"></div>
+            <button class="calendar-button2">before</button> 
+        </div>
+        <div class="calendar-body">
+            <ul class="calendar-weeks">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+            <ul class="calendar-days">
+            
+            </ul>
+        </div>
+    </div>
+    
 
+    <!-- 투두리스트 구현 -->
+    <div class="todolist-container">
+       <p class="todolist-title"> to do list ! </p>
+       <div class="todolist-body">
+            <div class="todolist-nav">
+                <p>date</p>
+                <p>content</p>
+                <p>check</p>
+            </div> 
+            <table class="todolist">
 
-<!-- 캘린더 section -->
-<section class="dh-section">
-  <!-- 캘린더 구현 -->
-  <div class="calendar-container">
-      <div id="calendar-nav">
-          <button class="calendar-button1">left</button>
-          <div class="calendar-date"></div>
-          <button class="calendar-button2">right</button>
-      </div>
-      <div class="calendar-body">
-          <ul class="calendar-weeks">
-              <li>sun</li>
-              <li>mon</li>
-              <li>tue</li>
-              <li>wed</li>
-              <li>thu</li>
-              <li>fri</li>
-              <li>sat</li>
-          </ul>
-          <ul class="calendar-days">
-          </ul>
-      </div>
-  </div>
-  <script src="../js/detail_dh.js"></script>
-  <!-- 투두리스트 구현 -->
-  <div class="todolist-container">
-     <p> to do list ! </p>
-      <tr class="todolist-fix">
-          <td>날짜</td>
-          <td>내용</td>
-          <td>체크</td>
-      </tr>
-      <div class="todolist-body">
-      </div>
-  </div>
+            </table>
+       </div>
+        <div class="todolist-bottom">
+            <button Id="todolist-allCheck"class="todolist-button">AllCheck</button>
+            <button id="todolist-delete" class="todolist-button">delete</button>
+        </div>
+    </div>
+
 <!-- 모달창 구현 -->
-  <div id="cal-modal-container">
-      <div>
-          <input type="text" id="cal-modal-input" placeholder="오늘의 운동은?">
-      </div>
-      <div class="cal-modal-button">
-          <button type="button" class="cal-modal-button1">입력</button>
-          <button type="button" class="cal-modal-button2">취소</button>
-      </div>
-  </div>
+
+    <div class="cal-modal-container">
+        <div class="cal-modal-body">
+            <div class="cal-modal-contents">
+                <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
+            </div>
+            <div class="cal-modal-button">
+                <button type="button" class="cal-modal-button1">입력</button>
+                <button type="button" class="cal-modal-button2">취소</button>
+        </div>
+        </div>
+    </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="../js/detail_dh.js"></script>
 
 
   
