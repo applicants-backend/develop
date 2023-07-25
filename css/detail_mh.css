@@ -65,27 +65,25 @@ div > h3 {
     line-height: 40vh;
     font-size: 40px;
     font-weight: bold;
-    /* border: 1px solid #000; */
     border: none;
     margin-bottom: 20px;
     box-sizing: border-box;
   }
   .slide-container > img {
-    width: 700px;
+    height: 600px;
     margin: 0 auto;
   }
   
   .slide-btn {
     text-align: center;
     box-sizing: border-box;
-    padding: 15px;
-    background-color: rgba(0,0,0,0.1);
-    /* border: 1px solid #000; */
+    padding: 12px;
+    background-color: rgba(0,0,0,0.04);
     border: none;
     cursor: pointer;
   }
   .slide-btn:hover {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
   }
     /* slide button */
 
