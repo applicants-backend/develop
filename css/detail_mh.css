@@ -65,7 +65,8 @@ div > h3 {
     line-height: 40vh;
     font-size: 40px;
     font-weight: bold;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    border: none;
     margin-bottom: 20px;
     box-sizing: border-box;
   }
@@ -77,9 +78,10 @@ div > h3 {
   .slide-btn {
     text-align: center;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 15px;
     background-color: rgba(0,0,0,0.1);
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    border: none;
     cursor: pointer;
   }
   .slide-btn:hover {
@@ -149,11 +151,11 @@ div > h3 {
         width: 7rem;
     } */
     .sub-sec2-box {
-        box-sizing: border-box;
-        width: 100vw;
-        height: auto;   
-        background-color: #fff;
-        /* margin: 0 10% 0 10%;  */
+      margin-top: 45px;
+      box-sizing: border-box;
+      width: 100vw;
+      height: auto;   
+      background-color: #fff;        /* margin: 0 10% 0 10%;  */
     }
 
   .detail-wrap{
