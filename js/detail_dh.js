@@ -94,7 +94,7 @@ document.querySelector('.calendar-button1').addEventListener("click",function() 
 
 document.querySelector('.calendar-button2').addEventListener("click",function() {
     nextMonth();
-
+    console.log(nextMonth());
 } )
 
 // 당월 날짜를 클릭 시 오늘 운동을 입력할 수 있는 모달창을 생성하는 과정입니다.
@@ -115,16 +115,17 @@ closemodal.addEventListener("click",e =>(
 
   // 모달창에서 입력한 내용을 투두리스트에 옮기는 과정입니다.
 
+
   let currnetDates = null;
   $(".calendar-days > li").on("click", function(){
       currnetDates = $(this).text();
-      console.log(currnetDates);
   })
 
   $(".cal-modal-button1").on("click",function(){
 
   let currentYears = date.getFullYear();
   let currentMonths =date.getMonth()+1;
+
 
   let inputTodos = $(".cal-modal-input").val();
   $(".todolist").append(`<tr id="todolist-content">
@@ -133,6 +134,7 @@ closemodal.addEventListener("click",e =>(
   </tr>`)
   document.querySelector(".cal-modal-input").value = null;
   })
+
 
 
     // 투두리스트 완료한 운동 삭제 하는 버튼 입니다.!! 
