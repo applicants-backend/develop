@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+          $('#header').load("header.html");
+          $("#footer").load("footer.html");
+      })
+    </script>
+    <!-- Boxicons CDN 링크 -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- 김민현-css,js및 임포트 -->
+    <!-- slick css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/detail_mh.css">
+    <!-- xeicon css 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick js 불러오기 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!-- 차두환-css,js및 임포트 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="../css/detail_dh.css">
+
+</head>
+<body>
+
+  <div id="header"></div>
+
+    <!-- 슬릭 운동 슬라이드 section -->
+  <section>
+    <div class="sub-sec2-box">
+      <div class="sld-wrp">
+
+        <div class="slider-for">
+          <div class="slide-container"><img src="../img/soccer1.jpg" alt=""></div>
+          <div class="slide-container"><img src="../img/soccer2.jpg" alt=""></div>
+          <div class="slide-container"><img src="../img/soccer3.jpg" alt=""></div>
+          <div class="slide-container"><img src="../img/soccer4.jpg" alt=""></div>
+          <div class="slide-container"><img src="../img/soccer5.jpg" alt=""></div>
+          <div class="slide-container"><img src="../img/soccer6.jpg" alt=""></div>
+        </div>
+        <div class="slider-nav">
+          <div class="slide-btn">slide-img1 small</div>
+          <div class="slide-btn">slide-img2 small</div>
+          <div class="slide-btn">slide-img3 small</div>
+          <div class="slide-btn">slide-img4 small</div>
+          <div class="slide-btn">slide-img5 small</div>
+          <div class="slide-btn">slide-img6 small</div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <script src="../js/detail_mh.js"></script>
+
+  <br/>
+
+  <!-- 운동 메인 사진 및 이름 section -->
+  <section></section>
+    <div class="detail-wrap detail-txt">
+      <h3>운동 이름</h3>
+      <p>운동 상세 설명 페이지</p>
+    </div>
+
+    <br/>
+
+
+
+  <section class="dh-section">
+    <!-- 캘린더 구현 -->
+    <div class="calendar-container">
+        <div id="calendar-nav">
+            <button class="calendar-button1">next</button> 
+            <div class="calendar-date"></div>
+            <button class="calendar-button2">before</button> 
+        </div>
+        <div class="calendar-body">
+            <ul class="calendar-weeks">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+            <ul class="calendar-days">
+            
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- 투두리스트 구현 -->
+    <div class="todolist-container">
+       <p class="todolist-title"> to do list ! </p>
+       <div class="todolist-body">
+            <div class="todolist-nav">
+                <p>date</p>
+                <p>content</p>
+                <p>check</p>
+            </div> 
+            <table class="todolist">
+
+            </table>
+       </div>
+        <div class="todolist-bottom">
+            <button Id="todolist-allCheck"class="todolist-button">AllCheck</button>
+            <button id="todolist-delete" class="todolist-button">delete</button>
+        </div>
+    </div>
+
+<!-- 모달창 구현 -->
+
+    <div class="cal-modal-container">
+        <div class="cal-modal-body">
+            <div class="cal-modal-contents">
+                <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
+            </div>
+            <div class="cal-modal-button">
+                <button type="button" class="cal-modal-button1">입력</button>
+                <button type="button" class="cal-modal-button2">취소</button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/detail_dh.js"></script>
+
+  <div id="footer"></div>
+
+</body>
+</html>

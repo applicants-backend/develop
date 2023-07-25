@@ -1,15 +1,3 @@
-<!-- @html,css,js 파일 따로만들기(중요)
-
-html
-   파일이름_이름이니셜.html
-css
-img
-js
-
-커밋할때 이름 "이름이니셜_파트이름"
-div, a 태그와 같이 공통적으로 많이쓰이는 태그들 
-꼭 개인이 클래스 따로 지정해서 작성하기(중요) -->
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -21,19 +9,18 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
     <!-- Boxicons CDN 링크 -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
     <!-- 김민재-css,js및 임포트 -->
 
     <!-- 김민현-css,js및 임포트 -->
     <!-- slick css 불러오기 -->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../css/detail_mh.css">
     <!-- xeicon css 불러오기 -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- jquery 불러오기 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- slick js 불러오기 -->
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="/"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
@@ -96,12 +83,12 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
       <div class="sld-wrp">
 
         <div class="slider-for">
-          <div class="slide-container">slide-img1</div>
-          <div class="slide-container">slide-img2</div>
-          <div class="slide-container">slide-img3</div>
-          <div class="slide-container">slide-img4</div>
-          <div class="slide-container">slide-img5</div>
-          <div class="slide-container">slide-img6</div>
+          <div class="slide-container"><img src="/img/climbing1.jpg" alt=""></div>
+          <div class="slide-container"><img src="/img/climbing2.jpg" alt=""></div>
+          <div class="slide-container"><img src="/img/climbing3.jpg" alt=""></div>
+          <div class="slide-container"><img src="/img/climbing4.jpg" alt=""></div>
+          <div class="slide-container"><img src="/img/climbing5.jpg" alt=""></div>
+          <div class="slide-container"><img src="/img/climbing6.jpg" alt=""></div>
         </div>
         <div class="slider-nav">
           <div class="slide-btn">slide-img1 small</div>
@@ -128,66 +115,66 @@ div, a 태그와 같이 공통적으로 많이쓰이는 태그들
 
     <br/>
 
+    <section class="dh-section">
+    <!-- 캘린더 구현 -->
+    <div class="calendar-container">
+        <div id="calendar-nav">
+            <button class="calendar-button1">next</button> 
+            <div class="calendar-date"></div>
+            <button class="calendar-button2">before</button> 
+        </div>
+        <div class="calendar-body">
+            <ul class="calendar-weeks">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+            <ul class="calendar-days">
+            
+            </ul>
+        </div>
+    </div>
+    
 
+    <!-- 투두리스트 구현 -->
+    <div class="todolist-container">
+       <p class="todolist-title"> to do list ! </p>
+       <div class="todolist-body">
+            <div class="todolist-nav">
+                <p>date</p>
+                <p>content</p>
+                <p>check</p>
+            </div> 
+            <table class="todolist">
 
-<!-- 캘린더 section -->
-<section class="dh-section">
-  <!-- 캘린더 구현 -->
-  <div class="calendar-container">
-      <div id="calendar-nav">
-          <button class="calendar-button1">left</button>
-          <div class="calendar-date"></div>
-          <button class="calendar-button2">right</button>
-      </div>
-      <div class="calendar-body">
-          <ul class="calendar-weeks">
-              <li>sun</li>
-              <li>mon</li>
-              <li>tue</li>
-              <li>wed</li>
-              <li>thu</li>
-              <li>fri</li>
-              <li>sat</li>
-          </ul>
-          <ul class="calendar-days">
-          </ul>
-      </div>
-  </div>
-  <script src="../js/detail_dh.js"></script>
-  <!-- 투두리스트 구현 -->
-  <div class="todolist-container">
-     <p> to do list ! </p>
-      <tr class="todolist-fix">
-          <td>날짜</td>
-          <td>내용</td>
-          <td>체크</td>
-      </tr>
-      <div class="todolist-body">
-      </div>
-  </div>
+            </table>
+       </div>
+        <div class="todolist-bottom">
+            <button Id="todolist-allCheck"class="todolist-button">AllCheck</button>
+            <button id="todolist-delete" class="todolist-button">delete</button>
+        </div>
+    </div>
+
 <!-- 모달창 구현 -->
-  <div id="cal-modal-container">
-      <div>
-          <input type="text" id="cal-modal-input" placeholder="오늘의 운동은?">
-      </div>
-      <div class="cal-modal-button">
-          <button type="button" class="cal-modal-button1">입력</button>
-          <button type="button" class="cal-modal-button2">취소</button>
-      </div>
-  </div>
+
+    <div class="cal-modal-container">
+        <div class="cal-modal-body">
+            <div class="cal-modal-contents">
+                <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
+            </div>
+            <div class="cal-modal-button">
+                <button type="button" class="cal-modal-button1">입력</button>
+                <button type="button" class="cal-modal-button2">취소</button>
+        </div>
+        </div>
+    </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="../js/detail_dh.js"></script>
 
 
   
