@@ -13,7 +13,7 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.812);
     color: #ffffff;
     left: 25%;
     
@@ -91,7 +91,7 @@
     line-height: 45px;
     border: 2px solid white; 
     text-align: center;
-    
+    color: #ffffff;
     /* margin-top:-250px;
     margin-left: 3rem; */
     /* text-align: center;
@@ -100,7 +100,6 @@
     align-items: center; */
   }
   .section2-item > div>div> a>p:hover{
-  
     background-color: #1E90FF;
     border-color: #1E90FF;
  }
