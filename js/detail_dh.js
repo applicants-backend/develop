@@ -131,6 +131,7 @@ closemodal.addEventListener("click",e =>(
   <td>${currentYears}년 ${currentMonths}월 ${currnetDates}일</td><td>${inputTodos}<td/>
   <input type="checkbox" class="todo-checkbox"</td><td>
   </tr>`)
+  document.querySelector(".cal-modal-input").value = null;
   })
 
 
