@@ -13,6 +13,8 @@
     </script>
     <!-- Boxicons CDN 링크 -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- 섹션2 css 링크 차두환 -->
+    <link rel="stylesheet" href="../css/detail_dh.css">
 </head>
 <body>
 
@@ -21,7 +23,66 @@
   <section >메인섹션</section>
 
 
-  <section >서브섹션2</section>
+  <section class="dh-section">
+    <!-- 캘린더 구현 -->
+    <div class="calendar-container">
+        <div id="calendar-nav">
+            <button class="calendar-button1">next</button> 
+            <div class="calendar-date"></div>
+            <button class="calendar-button2">before</button> 
+        </div>
+        <div class="calendar-body">
+            <ul class="calendar-weeks">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+            <ul class="calendar-days">
+            
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- 투두리스트 구현 -->
+    <div class="todolist-container">
+       <p class="todolist-title"> to do list ! </p>
+       <div class="todolist-body">
+            <div class="todolist-nav">
+                <p>date</p>
+                <p>content</p>
+                <p>check</p>
+            </div> 
+            <table class="todolist">
+
+            </table>
+       </div>
+        <div class="todolist-bottom">
+            <button Id="todolist-allCheck"class="todolist-button">AllCheck</button>
+            <button id="todolist-delete" class="todolist-button">delete</button>
+        </div>
+    </div>
+
+<!-- 모달창 구현 -->
+
+    <div class="cal-modal-container">
+        <div class="cal-modal-body">
+            <div class="cal-modal-contents">
+                <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
+            </div>
+            <div class="cal-modal-button">
+                <button type="button" class="cal-modal-button1">입력</button>
+                <button type="button" class="cal-modal-button2">취소</button>
+        </div>
+        </div>
+    </div>
+
+</section>
+<script src="../js/detail_dh.js"></script>
 
   <div id="footer"></div>
 
