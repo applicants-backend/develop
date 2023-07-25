@@ -436,8 +436,6 @@ nav .navbar .links li .sub-menu li{
   margin-top: 15px;
 
 }
-
-ul li:hover {
+.nav-links > ul li:hover {
   background-color: #e2e2e2;
-
 }

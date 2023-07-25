@@ -88,6 +88,7 @@ document.querySelector('.calendar-button1').addEventListener("click",function() 
 
 document.querySelector('.calendar-button2').addEventListener("click",function() {
     nextMonth();
+
 } )
 
 // 당월 날짜를 클릭 시 오늘 운동을 입력할 수 있는 모달창을 생성하는 과정입니다.
@@ -111,13 +112,13 @@ closemodal.addEventListener("click",e =>(
     let currnetDates = null;
     $(".calendar-days > li").on("click", function(){
         currnetDates = $(this).text();
+        
     })
 
     $(".cal-modal-button1").on("click",function(){
 
     let currentYears = date.getFullYear();
     let currentMonths =date.getMonth()+1;
-
 
     let inputTodos = $(".cal-modal-input").val();
     $(".todolist").append(`<tr id="todolist-content">
