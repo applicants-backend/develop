@@ -62,6 +62,7 @@
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav'
+
   });
   $('.slider-nav').slick({
     slidesToShow: 6,

@@ -92,5 +92,61 @@ document.querySelector('.calendar-button2').addEventListener("click",function() 
 
 // 당월 날짜를 클릭 시 오늘 운동을 입력할 수 있는 모달창을 생성하는 과정입니다.
 
-const modal = document.getElementById(`#cal-modal-container`)
-const openmodal = document.getElementsByClassName(`.this`)
+const modal = document.querySelector(".cal-modal-container")
+const openmodal = document.querySelector(".calendar-days")
+
+openmodal.addEventListener("click",e => (
+    modal.style.display ="flex"
+))
+
+const closemodal = document.querySelector(".cal-modal-button2")
+
+closemodal.addEventListener("click",e =>(
+    modal.style.display ="none"
+))
+
+
+  // 모달창에서 입력한 내용을 투두리스트에 옮기는 과정입니다.
+
+    let currnetDates = null;
+    $(".calendar-days > li").on("click", function(){
+        currnetDates = $(this).text();
+    })
+
+    $(".cal-modal-button1").on("click",function(){
+
+    let currentYears = date.getFullYear();
+    let currentMonths =date.getMonth()+1;
+
+
+    let inputTodos = $(".cal-modal-input").val();
+    $(".todolist").append(`<tr id="todolist-content">
+    <td>${currentYears}년 ${currentMonths}월 ${currnetDates}일</td><td>${inputTodos}<td/>
+    <input type="checkbox" class="todo-checkbox"</td><td>
+    </tr>`)
+    })
+
+
+    // 투두리스트 완료한 운동 삭제 하는 버튼 입니다.!! 
+    const deleteCheck = document.getElementById("todolist-delete");
+    
+    deleteCheck.addEventListener("click",()=>{
+       const ChekcedBox =document.querySelectorAll(".todo-checkbox")
+       ChekcedBox.forEach(ChekcedBox => {
+        if(ChekcedBox.checked){
+            ChekcedBox.parentNode.parentNode.remove();
+        }
+        })
+        })
+    // 투두리스트 전체 선택 하는 버튼입니다 .!!
+
+    const Allcheck = document.getElementById("todolist-allCheck");
+    Allcheck.addEventListener("click",()=>{
+        const checkList = document.querySelectorAll(".todo-checkbox")
+        checkList.forEach(checkList =>{
+            checkList.checked = true ;
+        })
+    })
+
+
+   
