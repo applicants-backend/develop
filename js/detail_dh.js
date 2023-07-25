@@ -62,24 +62,30 @@ const DateCondition = i >= FirstDateIndex && i < LastDateIndex + 1
     dates[i] = `<li class="calendar-dates ${DateCondition}">${date}</li>`;
 }) 
 
-document.querySelector('.calendar-days').innerHTML = dates.join(``);}
+document.querySelector('.calendar-days').innerHTML = dates.join(``);
+
+}
 
 rendarcalendar();
 // 지난 달 다음달 그리고 오늘로 이동하는 함수 입니다
 
+
 const prevMonth = () => {
     date.setMonth(date.getMonth() - 1);
    rendarcalendar();
+   $(".calendar-days > li").on("click", function(){
+    currnetDates = $(this).text();
+    console.log(currnetDates);
+})
 }
 
 const nextMonth = ()=> {
     date.setMonth(date.getMonth() +1 );
     rendarcalendar();
-}
-
-const goToday = () => {
-    date = new Date();
-    rendarcalendar();
+    $(".calendar-days > li").on("click", function(){
+        currnetDates = $(this).text();
+        console.log(currnetDates);
+    })
 }
 
 document.querySelector('.calendar-button1').addEventListener("click",function() {
@@ -109,24 +115,26 @@ closemodal.addEventListener("click",e =>(
 
   // 모달창에서 입력한 내용을 투두리스트에 옮기는 과정입니다.
 
-    let currnetDates = null;
-    $(".calendar-days > li").on("click", function(){
-        currnetDates = $(this).text();
 
-    })
+  let currnetDates = null;
+  $(".calendar-days > li").on("click", function(){
+      currnetDates = $(this).text();
+  })
 
-    $(".cal-modal-button1").on("click",function(){
+  $(".cal-modal-button1").on("click",function(){
 
-    let currentYears = date.getFullYear();
-    let currentMonths =date.getMonth()+1;
+  let currentYears = date.getFullYear();
+  let currentMonths =date.getMonth()+1;
 
 
-    let inputTodos = $(".cal-modal-input").val();
-    $(".todolist").append(`<tr id="todolist-content">
-    <td>${currentYears}년 ${currentMonths}월 ${currnetDates}일</td><td>${inputTodos}<td/>
-    <input type="checkbox" class="todo-checkbox"</td><td>
-    </tr>`)
-    })
+  let inputTodos = $(".cal-modal-input").val();
+  $(".todolist").append(`<tr id="todolist-content">
+  <td>${currentYears}년 ${currentMonths}월 ${currnetDates}일</td><td>${inputTodos}<td/>
+  <input type="checkbox" class="todo-checkbox"</td><td>
+  </tr>`)
+  document.querySelector(".cal-modal-input").value = null;
+  })
+
 
 
     // 투두리스트 완료한 운동 삭제 하는 버튼 입니다.!! 

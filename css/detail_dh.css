@@ -68,6 +68,10 @@
     cursor: pointer;
 }
 
+.calendar-days li:hover {
+    background-color: #878787;
+}
+
 .other {
     opacity: .3;
 }
@@ -197,4 +201,19 @@
     border-radius: 50px;
     cursor: pointer;
     font-size: 1.0rem;
+}
+
+/* 반응형구현입니다 */
+
+@media screen and (max-width: 800px) {
+    .dh-section{
+        flex-direction: column;
+    }
+    .calendar-container{
+        width: 100%;
+    }
+    .todolist-container{
+        width: 100%;
+        height: 500px;
+    }
 }
