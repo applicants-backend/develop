@@ -12,7 +12,7 @@
 
 css, javascript , jquery
 <h1>📁프로젝트 사용 방법</h1>
- <h2></h2>웹사이트에서 첫화면
+<h2>웹사이트에서 첫화면</h2>
 <img width="1122" alt="스크린샷 2023-07-26 오후 3 24 06" src="https://github.com/applicants-backend/develop/assets/102424773/99db759e-3820-4da5-9290-e1243fc766e2">
 <h2>메인 이미지 슬라이드</h2> 
 <img width="1096" alt="스크린샷 2023-07-26 오후 3 27 59" src="https://github.com/applicants-backend/develop/assets/102424773/7f2e91c1-f1c9-4777-a299-d6a14e785b39">
