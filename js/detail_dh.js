@@ -64,65 +64,108 @@ const DateCondition = i >= FirstDateIndex && i < LastDateIndex + 1
 
 document.querySelector('.calendar-days').innerHTML = dates.join(``);
 
+
+
 }
 
 rendarcalendar();
 // 지난 달 다음달 그리고 오늘로 이동하는 함수 입니다
 
 
+
 const prevMonth = () => {
+    clickplace = false;
+    clickcnt=0;
     date.setMonth(date.getMonth() - 1);
    rendarcalendar();
    $(".calendar-days > li").on("click", function(){
     currnetDates = $(this).text();
     console.log(currnetDates);
+    
 })
+
 }
 
 const nextMonth = ()=> {
+    clickplace = false;
+    clickcnt=0;
     date.setMonth(date.getMonth() +1 );
     rendarcalendar();
     $(".calendar-days > li").on("click", function(){
         currnetDates = $(this).text();
         console.log(currnetDates);
     })
+
+
 }
 
 document.querySelector('.calendar-button1').addEventListener("click",function() {
     prevMonth();
+   
 } )
 
 document.querySelector('.calendar-button2').addEventListener("click",function() {
     nextMonth();
-    console.log(nextMonth());
 } )
 
 // 당월 날짜를 클릭 시 오늘 운동을 입력할 수 있는 모달창을 생성하는 과정입니다.
 
 const modal = document.querySelector(".cal-modal-container")
 const openmodal = document.querySelector(".calendar-days")
+let clickplace = true;
+let clickcnt=0;
+let clickthis;
 
-openmodal.addEventListener("click",e => (
+openmodal.addEventListener("click",(e) => {
     modal.style.display ="flex"
-))
+})
 
+//클릭하면 날짜 강조하는 기능
+$(".calendar-days > li").on("click", function(){
+    
+    $(".cal-modal-body").fadeIn(500)
+    
+    clickthis =this;
+    clickplace = true;
+
+    if(clickplace==true && clickcnt==0){
+        $(clickthis).css("background","#1E90FF")
+        $(clickthis).css("border-radius","50px")
+        $(clickthis).css("color","white")
+        clickcnt=1;
+    }
+    
+})
+  
 const closemodal = document.querySelector(".cal-modal-button2")
 
-closemodal.addEventListener("click",e =>(
-    modal.style.display ="none"
-))
+closemodal.addEventListener("click",e =>{
+    $(".cal-modal-body").fadeOut(500)
+    // modal.style.display ="none"
+    clickplace = false;
+    $("li").css("background","white")
+    $("li").css("color","black")
+    clickcnt=0;
+    
+})
+
 
 
   // 모달창에서 입력한 내용을 투두리스트에 옮기는 과정입니다.
 
 
-  let currnetDates = null;
-  $(".calendar-days > li").on("click", function(){
-      currnetDates = $(this).text();
-  })
+let currnetDates = null;
 
+$(".calendar-days > li").on("click", function(){
+    currnetDates = $(this).text();
+    $(".cal-modal-body").fadeIn(500)
+  
+})
+  
+
+  
   $(".cal-modal-button1").on("click",function(){
-
+    
   let currentYears = date.getFullYear();
   let currentMonths =date.getMonth()+1;
 
@@ -133,6 +176,15 @@ closemodal.addEventListener("click",e =>(
   <input type="checkbox" class="todo-checkbox"</td><td>
   </tr>`)
   document.querySelector(".cal-modal-input").value = null;
+ 
+//   modal.style.display ="none"
+  clickplace = false;
+  $(".cal-modal-body").fadeOut(500)
+  $("li").css("background","white")
+  $("li").css("color","black")
+  
+  clickcnt=0;
+ 
   })
 
 
@@ -158,5 +210,7 @@ closemodal.addEventListener("click",e =>(
         })
     })
 
+
+   
 
    

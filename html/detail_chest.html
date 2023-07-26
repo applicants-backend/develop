@@ -29,7 +29,7 @@
     <!-- 차두환-css,js및 임포트 -->
     <!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="../css/detail_dh.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -121,17 +121,23 @@
 
 <!-- 모달창 구현 -->
 
-    <div class="cal-modal-container">
-        <div class="cal-modal-body">
-            <div class="cal-modal-contents">
-                <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
-            </div>
-            <div class="cal-modal-button">
-                <button type="button" class="cal-modal-button1">입력</button>
-                <button type="button" class="cal-modal-button2">취소</button>
-        </div>
-        </div>
-    </div>
+<div class="cal-modal-container">
+  <div class="cal-modal-body">
+    <h1>Content</h1>
+      <div class="cal-modal-contents">
+        
+          <input type="text" class="cal-modal-input" placeholder="오늘의 운동은?">
+      </div>
+      <div class="cal-modal-button">
+          <button type="button" class="cal-modal-button1"><p>OK</p></button>
+          <button type="button" class="cal-modal-button2">
+            <span class="material-symbols-outlined">
+            close
+            </span>
+          </button>
+      </div>
+  </div>
+</div>
 </section>
 
 <script src="../js/detail_dh.js"></script>
