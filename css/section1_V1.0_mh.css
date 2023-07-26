@@ -26,7 +26,6 @@
 }
 
 .visual > button {
-    /*  버튼을 absolute 로 해줘야한다. */
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -147,11 +146,9 @@
     width: 75%;
     margin: 0 auto;
     font-size: 20px;
-    /* padding-top: px; */
     color: #fff;
     word-break: keep-all;
     line-height: 42px;
-    
 }
 .slide-txt a:hover {
 
