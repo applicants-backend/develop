@@ -21,6 +21,14 @@ css, javascript , jquery
 <h2> 상세페이지</h2>
 <img width="1120" alt="스크린샷 2023-07-26 오후 3 27 19" src="https://github.com/applicants-backend/develop/assets/102424773/dbd110ad-6618-44fa-8874-37f545d68ef0">
 
+<h2>구현기능</h2>
+<p>반응형 로고, header,footer 구현<p>
+<p>버튼 누르면 스크롤 내려지는 애니메이션</p>
+<p>grid를 이용한 이미지 배치</p>
+<p>슬릭을 이용한 슬라이드 이미지</p>
+<p>자바스크립트를 이용한 캘린더 기능</p>
+<p>자바스크립트를 이용한 메모 기능</p>
+
  
 
 
